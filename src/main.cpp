@@ -5,6 +5,7 @@
 #include "math/Power.h"
 #include "virtual/CRect.h"
 #include "string/str1.h"
+#include "polar/coordin.h"
 
 using namespace std;
 
@@ -17,11 +18,8 @@ void virtualTest() {
 
 int main(int argc, char *argv[])
 {
-//  virtualTest();
-//  cout << power(2, 3) << endl;
-//  testStringCtor();
-//  testStringInput();
-  testStringFun();
+
+  testPolar();
 
   return 0;
 }

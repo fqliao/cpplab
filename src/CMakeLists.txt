@@ -13,6 +13,7 @@ aux_source_directory(. DIR_SRCS)
 add_subdirectory(math)
 add_subdirectory(virtual)
 add_subdirectory(string)
+add_subdirectory(polar)
 
 # 指定生成目标
 add_executable(${PROJECT_NAME} ${DIR_SRCS})
@@ -21,6 +22,7 @@ add_executable(${PROJECT_NAME} ${DIR_SRCS})
 target_link_libraries(${PROJECT_NAME} math)
 target_link_libraries(${PROJECT_NAME} virtual)
 target_link_libraries(${PROJECT_NAME} string)
+target_link_libraries(${PROJECT_NAME} polar)
 
 
 #设置执行程序支持gdb调试
