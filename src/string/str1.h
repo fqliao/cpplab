@@ -13,3 +13,6 @@ void testStringCtor();
 //测试string类的输入
 void testStringInput();
 
+//string方法的使用 用一个hangman游戏（猜单词游戏）完成
+void testStringFun();
+

@@ -20,7 +20,8 @@ int main(int argc, char *argv[])
 //  virtualTest();
 //  cout << power(2, 3) << endl;
 //  testStringCtor();
-  testStringInput();
+//  testStringInput();
+  testStringFun();
 
   return 0;
 }
