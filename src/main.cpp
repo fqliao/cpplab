@@ -10,6 +10,8 @@
 #include "nine/twofile1.cpp"
 #include "nine/static.cpp"
 #include "nine/namesp.h"
+#include "ten/stock00.h"
+#include "ten/stack.h"
 
 using namespace std;
 
@@ -23,7 +25,6 @@ void virtualTest() {
 int main(int argc, char *argv[])
 {
 
-  testNameSpace();
-
+  testStack();
   return 0;
 }

@@ -15,6 +15,7 @@ add_subdirectory(virtual)
 add_subdirectory(string)
 add_subdirectory(polar)
 add_subdirectory(nine)
+add_subdirectory(ten)
 
 # 指定生成目标
 add_executable(${PROJECT_NAME} ${DIR_SRCS})
@@ -25,6 +26,7 @@ target_link_libraries(${PROJECT_NAME} virtual)
 target_link_libraries(${PROJECT_NAME} string)
 target_link_libraries(${PROJECT_NAME} polar)
 target_link_libraries(${PROJECT_NAME} nine)
+target_link_libraries(${PROJECT_NAME} ten)
 
 
 #设置执行程序支持gdb调试
