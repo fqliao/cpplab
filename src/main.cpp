@@ -6,6 +6,10 @@
 #include "virtual/CRect.h"
 #include "string/str1.h"
 #include "polar/coordin.h"
+#include "nine/support.cpp"
+#include "nine/twofile1.cpp"
+#include "nine/static.cpp"
+#include "nine/namesp.h"
 
 using namespace std;
 
@@ -19,7 +23,7 @@ void virtualTest() {
 int main(int argc, char *argv[])
 {
 
-  testPolar();
+  testNameSpace();
 
   return 0;
 }
