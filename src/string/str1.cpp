@@ -84,6 +84,22 @@ void testStringInput()
 
 }
 
+void testStringSubstr()
+{
+    const int NUM = 5;
+    const string s[NUM] = {"_id_", "_num_", "_status_", "name", "item_id"};
+    for(int i = 0; i < NUM; i++)
+    {
+        if((s[i].substr(0, 1) != "_" && s[i].substr(s[i].size()-1, 1) != "_") || (s[i] == "_status_"))
+        {
+            cout << s[i] << " ";
+        }
+        else
+        {
+
+        }
+    }
+}
 void testStringFun()
 {
   const int NUM = 26;

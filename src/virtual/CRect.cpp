@@ -22,3 +22,9 @@ void CRect::disp(CPoint *cp)
   std::cout << "面积为：" << cp->getArea() << std::endl;
   delete cp;
 }
+
+void virtualTest() {
+  CRect *rt = new CRect(6.0, 9.0);
+  rt->disp(rt);
+//  delete rt;
+}

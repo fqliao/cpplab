@@ -16,3 +16,7 @@ void testStringInput();
 //string方法的使用 用一个hangman游戏（猜单词游戏）完成
 void testStringFun();
 
+void testStringSubstr();
+
+void testStringByte();
+

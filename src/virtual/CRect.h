@@ -13,3 +13,5 @@ class CRect:public CPoint
  private:
   float m_w,m_h;
 };
+
+void virtualTest();
