@@ -56,7 +56,7 @@ void second()
 		cout << m.first << " : " << m.second << endl;
 }
 
-void best()
+void better()
 {
 	using namespace boost::assign;
 	vector<int> vec;
@@ -83,6 +83,35 @@ void best()
 		cout << m.first << " : " << m.second << endl;
 }
 
+void best()
+{
+	vector<int> vec = {1, 2, 3, 4, 5, 6 * 6}; //override += and ,
+	for (auto v : vec)
+		cout << v << " ";
+	cout << endl;
+
+	list<string> li = {"btc", "eth", "eos"};
+	for (auto l : li)
+		cout << l << " ";
+	cout << endl;
+
+	set<string> ss = {"c", "cpp", "lua", "swift"};
+	for (auto s : ss)
+		cout << s << " ";
+	cout << endl;
+
+	map<int, string> ma = {{1, "xijinping"}, {2, "likeqiang"}};
+	for (auto m : ma)
+		cout << m.first << " : " << m.second << endl;
+}
+
+void repeatInit()
+{
+	vector<int> vec(4, 1);
+	for (auto v : vec)
+		cout << v;
+}
+
 // note: shared_ptr is a feature of C++11 ,so compile by
 // g++ -std=c++11 -ggdb -o test_shared_ptr test_shared_ptr.cpp
 // use c++11 gdb
@@ -91,5 +120,9 @@ int main()
 {
 //	first();
 //	second();
-	best();
+//	better();
+	cout << "==============" << endl;
+	//c++11 initiallizer
+//	best();
+	repeatInit();
 }
