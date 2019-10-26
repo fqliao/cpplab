@@ -18,6 +18,7 @@ add_subdirectory(nine)
 add_subdirectory(ten)
 add_subdirectory(thirteen)
 add_subdirectory(vector)
+add_subdirectory(libextern)
 
 # 指定生成目标
 add_executable(${PROJECT_NAME} ${DIR_SRCS})
@@ -31,6 +32,7 @@ target_link_libraries(${PROJECT_NAME} nine)
 target_link_libraries(${PROJECT_NAME} ten)
 target_link_libraries(${PROJECT_NAME} thirteen)
 target_link_libraries(${PROJECT_NAME} vector)
+target_link_libraries(${PROJECT_NAME} libextern)
 
 
 #设置执行程序支持gdb调试
